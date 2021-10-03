@@ -6,6 +6,9 @@ font-family: 'Poppins', sans-serif; */
   --default-font-family: "Poppins", sans-serif;
   --secondary-color: #f9f7fe;
 }
+body {
+  font-family: var(--default-font-family);
+}
 h1,
 h2,
 h3,
@@ -14,6 +17,7 @@ h5,
 h6 {
   color: black;
   font-family: var(--heading-font-family);
+  font-weight: bold;
 }
 
 p {
@@ -43,6 +47,7 @@ h2 {
 .hero h2 {
   font-family: var(--default-font-family);
   line-height: 1.5;
+  font-size: 24px;
 }
 
 .btn-branding {
@@ -67,9 +72,13 @@ h2 {
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
+    line-height: 2;
   }
   h2 {
     font-size: 44px;
+  }
+  .hero {
+    padding: 80px 20px;
   }
   .project-description {
     padding: 0;
